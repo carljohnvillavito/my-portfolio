@@ -247,3 +247,14 @@ input:focus, textarea:focus { border-color: #2a3bff; box-shadow: 0 0 0 4px var(-
   .project-grid { grid-template-columns: 1fr; }
   .social-list { grid-template-columns: 1fr; }
 }
+
+/* Section cards */
+.section-card {
+  background: linear-gradient(180deg, rgba(122, 92, 255, 0.06), rgba(16, 21, 33, 0.9));
+  border: 1px solid #1b2235;
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow-1);
+}
+.about-main-card { align-self: start; }
+.social-card { padding: 24px; }

@@ -64,30 +64,6 @@
             <div class="orb orb-1"></div>
             <div class="orb orb-2"></div>
             <div class="grid-bg"></div>
-
-            <div class="hero-cards">
-              <a class="hero-card" href="#about" aria-label="Go to About Me">
-                <div class="hc-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4 0-7 2-7 4v2h14v-2c0-2-3-4-7-4Z"/></svg>
-                </div>
-                <div class="hc-body">
-                  <h3>About Me</h3>
-                  <p>IS student • Front‑end • UI/UX</p>
-                </div>
-                <span class="hc-cta" aria-hidden="true">→</span>
-              </a>
-
-              <a class="hero-card" href="#social" aria-label="Go to Social Contacts">
-                <div class="hc-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 16.08a3 3 0 0 0-2.12.88l-5.02-2.51a3.05 3.05 0 0 0 0-1.91l5.02-2.52A3 3 0 1 0 15 7a3 3 0 0 0 .06.58l-5.02 2.52a3 3 0 1 0 0 3.8l5.02 2.52A3 3 0 1 0 18 16.08Z"/></svg>
-                </div>
-                <div class="hc-body">
-                  <h3>Social Contacts</h3>
-                  <p>Facebook • GitHub • TikTok</p>
-                </div>
-                <span class="hc-cta" aria-hidden="true">→</span>
-              </a>
-            </div>
           </div>
         </div>
       </section>
@@ -95,7 +71,7 @@
       <!-- About Me -->
       <section id="about" class="section about">
         <div class="container two-col">
-          <div>
+          <div class="section-card about-main-card">
             <h2>About Me</h2>
             <p>
               I'm an IS student passionate about transforming ideas into
@@ -199,37 +175,39 @@
       <!-- Social Contacts -->
       <section id="social" class="section social">
         <div class="container">
-          <div class="section-head">
-            <h2>Social Contacts</h2>
-            <p>Connect with me online.</p>
-          </div>
+          <div class="section-card social-card">
+            <div class="section-head">
+              <h2>Social Contacts</h2>
+              <p>Connect with me online.</p>
+            </div>
 
-          <ul class="social-list">
-            <li>
-              <a class="social-link" href="https://www.facebook.com/carljohn.villavito" target="_blank" rel="noopener" aria-label="Facebook: carljohn.villavito">
-                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.48 17.52 2 11.94 2S2 6.48 2 12.06c0 5.02 3.66 9.19 8.44 9.94v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.77-1.61 1.56v1.87h2.74l-.44 2.9h-2.3v7.03C18.34 21.25 22 17.08 22 12.06Z"/></svg>
-                <span>Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a class="social-link" href="mailto:carljohnvillavito2023@gmail.com" aria-label="Email: carljohnvillavito2023@gmail.com">
-                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M2 5c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v.4l-10 6.25L2 5.4V5Zm0 3.1V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.1l-10 6.25L2 8.1Z"/></svg>
-                <span>carljohnvillavito2023@gmail.com</span>
-              </a>
-            </li>
-            <li>
-              <a class="social-link" href="https://www.tiktok.com/@itsjustcjdude" target="_blank" rel="noopener" aria-label="TikTok: @itsjustcjdude">
-                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M21 8.5a7 7 0 0 1-4-1.2v6.2a6.5 6.5 0 1 1-6.5-6.5c.3 0 .6 0 .9.1v3.1a3.5 3.5 0 1 0 2.6 3.4V2h2.1A7 7 0 0 0 21 4.2V8.5Z"/></svg>
-                <span>TikTok</span>
-              </a>
-            </li>
-            <li>
-              <a class="social-link" href="https://github.com/carljohnvillavito" target="_blank" rel="noopener" aria-label="GitHub: carljohnvillavito">
-                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.85 3.15 8.96 7.52 10.41.55.1.75-.24.75-.53 0-.26-.01-1.11-.02-2.01-3.06.66-3.7-1.31-3.7-1.31-.5-1.27-1.22-1.61-1.22-1.61-.99-.68.07-.66.07-.66 1.09.08 1.67 1.12 1.67 1.12.98 1.66 2.58 1.18 3.21.9.1-.71.38-1.18.69-1.45-2.44-.28-5.01-1.22-5.01-5.43 0-1.2.43-2.19 1.12-2.96-.11-.27-.49-1.37.11-2.85 0 0 .93-.3 3.05 1.13a10.6 10.6 0 0 1 2.78-.37c.94 0 1.88.12 2.77.37 2.12-1.43 3.05-1.13 3.05-1.13.6 1.48.22 2.58.11 2.85.69.77 1.12 1.76 1.12 2.96 0 4.22-2.57 5.15-5.02 5.42.39.33.73.98.73 1.98 0 1.43-.01 2.58-.01 2.93 0 .29.19.64.76.53A10.53 10.53 0 0 0 23 11.5C23 5.24 18.27.5 12 .5Z"/></svg>
-                <span>@carljohnvillavito</span>
-              </a>
-            </li>
-          </ul>
+            <ul class="social-list">
+              <li>
+                <a class="social-link" href="https://www.facebook.com/carljohn.villavito" target="_blank" rel="noopener" aria-label="Facebook: carljohn.villavito">
+                  <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.48 17.52 2 11.94 2S2 6.48 2 12.06c0 5.02 3.66 9.19 8.44 9.94v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.77-1.61 1.56v1.87h2.74l-.44 2.9h-2.3v7.03C18.34 21.25 22 17.08 22 12.06Z"/></svg>
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a class="social-link" href="mailto:carljohnvillavito2023@gmail.com" aria-label="Email: carljohnvillavito2023@gmail.com">
+                  <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M2 5c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v.4l-10 6.25L2 5.4V5Zm0 3.1V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.1l-10 6.25L2 8.1Z"/></svg>
+                  <span>carljohnvillavito2023@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a class="social-link" href="https://www.tiktok.com/@itsjustcjdude" target="_blank" rel="noopener" aria-label="TikTok: @itsjustcjdude">
+                  <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M21 8.5a7 7 0 0 1-4-1.2v6.2a6.5 6.5 0 1 1-6.5-6.5c.3 0 .6 0 .9.1v3.1a3.5 3.5 0 1 0 2.6 3.4V2h2.1A7 7 0 0 0 21 4.2V8.5Z"/></svg>
+                  <span>TikTok</span>
+                </a>
+              </li>
+              <li>
+                <a class="social-link" href="https://github.com/carljohnvillavito" target="_blank" rel="noopener" aria-label="GitHub: carljohnvillavito">
+                  <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.85 3.15 8.96 7.52 10.41.55.1.75-.24.75-.53 0-.26-.01-1.11-.02-2.01-3.06.66-3.7-1.31-3.7-1.31-.5-1.27-1.22-1.61-1.22-1.61-.99-.68.07-.66.07-.66 1.09.08 1.67 1.12 1.67 1.12.98 1.66 2.58 1.18 3.21.9.1-.71.38-1.18.69-1.45-2.44-.28-5.01-1.22-5.01-5.43 0-1.2.43-2.19 1.12-2.96-.11-.27-.49-1.37.11-2.85 0 0 .93-.3 3.05 1.13a10.6 10.6 0 0 1 2.78-.37c.94 0 1.88.12 2.77.37 2.12-1.43 3.05-1.13 3.05-1.13.6 1.48.22 2.58.11 2.85.69.77 1.12 1.76 1.12 2.96 0 4.22-2.57 5.15-5.02 5.42.39.33.73.98.73 1.98 0 1.43-.01 2.58-.01 2.93 0 .29.19.64.76.53A10.53 10.53 0 0 0 23 11.5C23 5.24 18.27.5 12 .5Z"/></svg>
+                  <span>@carljohnvillavito</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
