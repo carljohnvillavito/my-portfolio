@@ -271,3 +271,18 @@ input:focus, textarea:focus { border-color: #2a3bff; box-shadow: 0 0 0 4px var(-
 .about-side-card { display: grid; gap: 10px; }
 .social-card .section-head { margin-bottom: 14px; }
 .social-card .social-list { margin-top: 6px; }
+
+/* Section spacing adjustments when using cards */
+.about .container.two-col { gap: 24px; }
+.about-main-card { padding: 28px !important; }
+.about-side-card { padding: 20px !important; }
+.about-side-card .about-avatar { margin-bottom: 10px; }
+.about-side-card .about-body { display: grid; gap: 8px; }
+
+.social .container { }
+.social-card { padding: 28px !important; }
+.social-card .social-list { gap: 16px; }
+.section .section-head h2 { margin-bottom: 6px; }
+
+/* Remove unused specific contact form spacing now that section is removed */
+.contact-form, .field, .form-actions, .form-note { }

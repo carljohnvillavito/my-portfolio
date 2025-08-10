@@ -88,40 +88,6 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Contact form: validate and open mail client
-const form = document.getElementById('contact-form');
-if (form) {
-  const nameEl = form.querySelector('#name');
-  const emailEl = form.querySelector('#email');
-  const messageEl = form.querySelector('#message');
-
-  const setError = (field, msg) => {
-    const errorEl = form.querySelector(`.error[data-for="${field.id}"]`);
-    if (errorEl) errorEl.textContent = msg || '';
-    field.setAttribute('aria-invalid', msg ? 'true' : 'false');
-  };
-
-  const validateEmail = (email) => /[^\s@]+@[^\s@]+\.[^\s@]+/.test(email);
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    let valid = true;
-
-    if (!nameEl.value.trim()) { setError(nameEl, 'Please enter your name.'); valid = false; } else { setError(nameEl, ''); }
-    if (!emailEl.value.trim() || !validateEmail(emailEl.value)) { setError(emailEl, 'Enter a valid email.'); valid = false; } else { setError(emailEl, ''); }
-    if (!messageEl.value.trim()) { setError(messageEl, 'Please write a message.'); valid = false; } else { setError(messageEl, ''); }
-
-    if (!valid) return;
-
-    const subject = encodeURIComponent(`Portfolio message from ${nameEl.value.trim()}`);
-    const body = encodeURIComponent(`Name: ${nameEl.value.trim()}\nEmail: ${emailEl.value.trim()}\n\n${messageEl.value.trim()}`);
-
-    const mailto = `mailto:carljohnvillavito2023@gmail.com?subject=${subject}&body=${body}`;
-    window.location.href = mailto;
-  });
-}
-
 // Footer year
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
