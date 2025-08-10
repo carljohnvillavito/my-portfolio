@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio of Carl John Villavito — Information Systems student and web developer." />
+
+    <title>Carl John Villavito | IS Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header" id="home">
+      <div class="container header-inner">
+        <a href="#home" class="brand" aria-label="Go to home">
+          <span class="brand-mark" aria-hidden="true">CV</span>
+          <span class="brand-text">Carl John Villavito</span>
+        </a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#social">Social</a></li>
+            <li><a href="#contact" class="btn btn-primary btn-sm">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero / Powerful main interface -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Information Systems</p>
+            <h1>
+              Hi, I'm <span class="text-gradient">Carl John Villavito</span>
+            </h1>
+            <p class="subtitle">
+              I design and build user‑centric, data‑driven web experiences.
+              <span class="typed" aria-live="polite"></span>
+            </p>
+            <div class="hero-ctas">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#about" class="btn btn-ghost">About Me</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="grid-bg"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me -->
+      <section id="about" class="section about">
+        <div class="container two-col">
+          <div>
+            <h2>About Me</h2>
+            <p>
+              I'm an IS student passionate about transforming ideas into
+              intuitive, performant web applications. I enjoy crafting clean
+              interfaces, modeling data, and building reliable front‑end
+              experiences with a focus on accessibility and performance.
+            </p>
+            <p>
+              Beyond code, I explore UI/UX patterns, systems thinking, and
+              modern tooling that helps teams ship faster with quality.
+            </p>
+            <ul class="chip-list" aria-label="Skills">
+              <li class="chip">HTML</li>
+              <li class="chip">CSS / Tailwind</li>
+              <li class="chip">JavaScript</li>
+              <li class="chip">React (basics)</li>
+              <li class="chip">Python</li>
+              <li class="chip">SQL</li>
+            </ul>
+          </div>
+          <aside class="about-card">
+            <div class="about-avatar" aria-hidden="true">CV</div>
+            <div class="about-body">
+              <h3>Quick Facts</h3>
+              <ul class="about-list">
+                <li>IS student & web enthusiast</li>
+                <li>Love: anime, design, and clean code</li>
+                <li>Focus: front‑end, UX, and data</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <div class="container">
+          <div class="section-head">
+            <h2>Project Gallery</h2>
+            <p>Some things I've built and shipped.</p>
+          </div>
+
+          <div class="project-grid">
+            <article class="card" tabindex="0">
+              <div class="card-media gradient-1" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3>BilyabitsOnAnime</h3>
+                <p>Watch anime for free using this website.</p>
+                <div class="card-actions">
+                  <a class="btn btn-primary btn-sm" href="https://bilyabitsonanime-6fjf.onrender.com/" target="_blank" rel="noopener">Visit</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" tabindex="0">
+              <div class="card-media gradient-2" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3>BilyabitsOnManhwa</h3>
+                <p>Read your favorite manhwas with high‑quality images.</p>
+                <div class="card-actions">
+                  <a class="btn btn-primary btn-sm" href="https://bilyabits-on-manhwa.onrender.com/landing" target="_blank" rel="noopener">Visit</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" tabindex="0">
+              <div class="card-media gradient-3" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3>Karate‑Mastery</h3>
+                <p>A presentive website dedicated to karate, inspired by Lookism.</p>
+                <div class="card-actions">
+                  <a class="btn btn-primary btn-sm" href="https://carljohnvillavito.github.io/karate-mastery/" target="_blank" rel="noopener">Visit</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" tabindex="0">
+              <div class="card-media gradient-4" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3>Bilyabits YTDL</h3>
+                <p>Fast and secure web tool to download YouTube videos or audio.</p>
+                <div class="card-actions">
+                  <a class="btn btn-primary btn-sm" href="https://carljohnvillavito.github.io/bilyabits_ytdl/" target="_blank" rel="noopener">Visit</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Contacts -->
+      <section id="social" class="section social">
+        <div class="container">
+          <div class="section-head">
+            <h2>Social Contacts</h2>
+            <p>Connect with me online.</p>
+          </div>
+
+          <ul class="social-list">
+            <li>
+              <a class="social-link" href="https://github.com/carljohnvillavito" target="_blank" rel="noopener" aria-label="GitHub: carljohnvillavito">
+                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.85 3.15 8.96 7.52 10.41.55.1.75-.24.75-.53 0-.26-.01-1.11-.02-2.01-3.06.66-3.7-1.31-3.7-1.31-.5-1.27-1.22-1.61-1.22-1.61-.99-.68.07-.66.07-.66 1.09.08 1.67 1.12 1.67 1.12.98 1.66 2.58 1.18 3.21.9.1-.71.38-1.18.69-1.45-2.44-.28-5.01-1.22-5.01-5.43 0-1.2.43-2.19 1.12-2.96-.11-.27-.49-1.37.11-2.85 0 0 .93-.3 3.05 1.13a10.6 10.6 0 0 1 2.78-.37c.94 0 1.88.12 2.77.37 2.12-1.43 3.05-1.13 3.05-1.13.6 1.48.22 2.58.11 2.85.69.77 1.12 1.76 1.12 2.96 0 4.22-2.57 5.15-5.02 5.42.39.33.73.98.73 1.98 0 1.43-.01 2.58-.01 2.93 0 .29.19.64.76.53A10.53 10.53 0 0 0 23 11.5C23 5.24 18.27.5 12 .5Z"/></svg>
+                <span>@carljohnvillavito</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="mailto:youremail@example.com" aria-label="Email">
+                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M2 5c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v.4l-10 6.25L2 5.4V5Zm0 3.1V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.1l-10 6.25L2 8.1Z"/></svg>
+                <span>Email</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="#" aria-label="LinkedIn">
+                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3A2.94 2.94 0 0 1 22 6v12a2.94 2.94 0 0 1-3 3H5a2.94 2.94 0 0 1-3-3V6a2.94 2.94 0 0 1 3-3h14Zm-9 7H7v8h3v-8Zm.2-3a1.8 1.8 0 1 0-3.6 0 1.8 1.8 0 0 0 3.6 0ZM20 13.7c0-2.8-1.5-4.1-3.6-4.1a3.1 3.1 0 0 0-2.8 1.6V10H11v8h2.7v-4.3c0-1.1.8-1.9 1.8-1.9s1.7.7 1.7 1.9V18H21v-4.3Z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact">
+        <div class="container two-col">
+          <div>
+            <h2>Send me a message</h2>
+            <p>Have a question or proposal? Let’s talk.</p>
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+                <small class="error" data-for="name"></small>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                <small class="error" data-for="email"></small>
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea..." required></textarea>
+                <small class="error" data-for="message"></small>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Send</button>
+                <p class="form-note">This will open your email app with a pre‑filled message.</p>
+              </div>
+            </form>
+          </div>
+          <aside class="contact-card">
+            <h3>Prefer email?</h3>
+            <p>
+              You can also email me directly:
+              <a class="link" href="mailto:youremail@example.com">youremail@example.com</a>
+            </p>
+            <p class="muted">Replace with your real email in the links above.</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Carl John Villavito. All rights reserved.</p>
+        <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+      </div>
+    </footer>
+
+    <noscript>
+      Your browser has JavaScript disabled. The site is fully accessible, but
+      interactive enhancements (menu, animations) are unavailable.
+    </noscript>
+  </body>
+</html>
