@@ -126,3 +126,37 @@ if (form) {
 // Footer year
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+// Project search filter
+const projectSearchInput = document.getElementById('project-search');
+const projectCards = document.querySelectorAll('.project-grid .card');
+const projectCountEl = document.getElementById('project-count');
+const noProjectResultsEl = document.getElementById('no-project-results');
+
+function updateProjectCount() {
+  const visibleCount = Array.from(projectCards).filter((c) => !c.hasAttribute('hidden')).length;
+  if (projectCountEl) {
+    projectCountEl.textContent = `${visibleCount} project${visibleCount === 1 ? '' : 's'}`;
+  }
+}
+
+function filterProjects() {
+  const q = (projectSearchInput?.value || '').trim().toLowerCase();
+  Array.from(projectCards).forEach((card) => {
+    const title = (card.dataset.title || '').toLowerCase();
+    const description = (card.dataset.description || '').toLowerCase();
+    const matches = !q || title.includes(q) || description.includes(q);
+    if (matches) {
+      card.removeAttribute('hidden');
+    } else {
+      card.setAttribute('hidden', '');
+    }
+  });
+
+  const anyVisible = Array.from(projectCards).some((c) => !c.hasAttribute('hidden'));
+  if (noProjectResultsEl) noProjectResultsEl.style.display = anyVisible ? 'none' : 'block';
+  updateProjectCount();
+}
+
+projectSearchInput?.addEventListener('input', filterProjects);
+filterProjects();
