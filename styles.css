@@ -258,3 +258,16 @@ input:focus, textarea:focus { border-color: #2a3bff; box-shadow: 0 0 0 4px var(-
 }
 .about-main-card { align-self: start; }
 .social-card { padding: 24px; }
+
+/* Section cards styled like project cards */
+.section-card.card {
+  background: var(--card);
+  border: 1px solid #1a2034;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+  padding: 20px;
+}
+.section-card.card:hover { transform: none; box-shadow: var(--shadow-1); border-color: #1a2034; }
+.about-side-card { display: grid; gap: 10px; }
+.social-card .section-head { margin-bottom: 14px; }
+.social-card .social-list { margin-top: 6px; }
