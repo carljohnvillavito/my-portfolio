@@ -143,8 +143,8 @@ function updateProjectCount() {
 function filterProjects() {
   const q = (projectSearchInput?.value || '').trim().toLowerCase();
   Array.from(projectCards).forEach((card) => {
-    const title = (card.dataset.title || '').toLowerCase();
-    const description = (card.dataset.description || '').toLowerCase();
+    const title = ((card.dataset.title || card.querySelector('h3')?.textContent || '')).toLowerCase();
+    const description = ((card.dataset.description || card.querySelector('p')?.textContent || '')).toLowerCase();
     const matches = !q || title.includes(q) || description.includes(q);
     if (matches) {
       card.removeAttribute('hidden');
@@ -159,4 +159,5 @@ function filterProjects() {
 }
 
 projectSearchInput?.addEventListener('input', filterProjects);
+projectSearchInput?.addEventListener('search', filterProjects);
 filterProjects();
