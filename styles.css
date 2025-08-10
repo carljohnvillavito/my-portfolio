@@ -286,3 +286,11 @@ input:focus, textarea:focus { border-color: #2a3bff; box-shadow: 0 0 0 4px var(-
 
 /* Remove unused specific contact form spacing now that section is removed */
 .contact-form, .field, .form-actions, .form-note { }
+
+/* Social card spacing improvements */
+.social-card { padding: 32px !important; display: grid; gap: 20px; }
+.social-card .section-head { margin: 0; }
+.social-card .section-head h2 { margin: 0; }
+.social-card .section-head p { margin: 0; color: var(--muted); }
+.social-card .social-list { margin: 0; gap: 18px; }
+.social-card .social-link { padding: 16px 18px; }
