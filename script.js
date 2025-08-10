@@ -29,9 +29,10 @@ anchorLinks.forEach((link) => {
 const typedEl = document.querySelector('.typed');
 if (typedEl) {
   const phrases = [
-    'Developer',
+    'Frontend Developer',
     'IS Student',
-    'UI/UX Enthusiast',
+    'Vibe Coder Enjoyer',
+    '🥷',
   ];
   let phraseIndex = 0;
   let charIndex = 0;
