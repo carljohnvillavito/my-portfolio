@@ -117,8 +117,7 @@ if (form) {
     const subject = encodeURIComponent(`Portfolio message from ${nameEl.value.trim()}`);
     const body = encodeURIComponent(`Name: ${nameEl.value.trim()}\nEmail: ${emailEl.value.trim()}\n\n${messageEl.value.trim()}`);
 
-    // TODO: replace with your real email address
-    const mailto = `mailto:youremail@example.com?subject=${subject}&body=${body}`;
+    const mailto = `mailto:carljohnvillavito2023@gmail.com?subject=${subject}&body=${body}`;
     window.location.href = mailto;
   });
 }
