@@ -187,6 +187,9 @@ input:focus, textarea:focus { border-color: #2a3bff; box-shadow: 0 0 0 4px var(-
 /* Footer */
 .site-footer { border-top: 1px solid #151a25; padding: 20px 0; background: #0b0f1a; }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; }
+.footer-actions { display: flex; align-items: center; gap: 10px; }
+.footer-socials a { color: var(--text); display: inline-grid; place-items: center; width: 36px; height: 36px; border-radius: 10px; background: #0f1423; border: 1px solid #1a2034; }
+.footer-socials a:hover { background: #121a2e; border-color: #273058; }
 .to-top { color: var(--text); text-decoration: none; background: #0f1423; border: 1px solid #1a2034; width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; }
 .to-top:hover { background: #121a2e; border-color: #273058; }
 
